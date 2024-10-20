@@ -41,3 +41,4 @@ next-env.d.ts
 /src/app/api
 /src/services
 Makefile
+next.config.js
