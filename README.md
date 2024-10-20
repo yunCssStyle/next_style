@@ -1,5 +1,3 @@
-# StyleLook
-
     react & typescript
     node version : v18.19.0
 
