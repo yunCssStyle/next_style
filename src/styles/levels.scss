@@ -1,0 +1,9 @@
+:root {
+  --error-main-container-level: 1; // 에러 메인 컨테이너 z-index
+  --notfound-main-container-level: 1; // 404 메인 컨테이너 z-index
+  --more-bg-level: 10; // 더보기 백그라운드 z-index
+  --more-text-level: 11; // 더보기 텍스트 z-index
+  --drop-down-level: 99; // dropDown z-index
+  --top-nav-level: 100; // topNav z-index
+  --modal-level: 101; // modal container z-index
+}

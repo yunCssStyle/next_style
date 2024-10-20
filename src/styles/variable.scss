@@ -1,0 +1,68 @@
+:root {
+  --color-text-black: #000000;
+  --color-point: #9a00ff;
+  --color-point-hover: rgba(154, 0, 255, 0.1);
+  --color-point-select: rgba(154, 0, 255, 0.03);
+  --color-red: #ff001f;
+  --color-grey: #f2f0f4;
+  --color-placeholder-grey: #a0a6b0;
+  --color-placeholder-grey-disabled: rgba(160, 166, 176, 0.5);
+  --color-white: #ffffff;
+  --color-black: #595959;
+  --color-gren: #20e300;
+  --color-bg: #f7f6fc;
+  --color-272727: #272727;
+  --color-484848: #484848;
+  --color-696969: #696969;
+  --color-8a8a8a: #8a8a8a;
+  --color-969696: #969696;
+  --color-f5f5f5: #f5f5f5;
+
+  --color-efefef: #efefef;
+  --color-fff7f7: #fff7f7;
+  --color-ffebeb: #ffebeb;
+  --color-737373: #737373;
+  --color-591a1a: #591a1a;
+  --color-1f4636: #1f4636;
+  --color-back-25: rgba(0, 0, 0, 0.25);
+  --color-black-15: rgba(0, 0, 0, 0.1);
+  --color-black-40: rgba(0, 0, 0, 0.4);
+
+  --color-skeleton-start: rgba(225, 225, 225, 1);
+  --color-skeleton-middle: rgba(168, 172, 174, 1);
+  --color-skeleton-end: rgba(225, 225, 225, 1);
+
+  --font-size: 16px;
+
+  --w-main-min: 1280px; // 최소 넓이
+  --w-main-max: 1920px; // 최대 넓이
+  --w-main-wrap-max: 1844px; // 콘텐츠 최대 넓이 >> 컨터이너 안에 좌우 패딩이 30px 씩 먹혀 있음 곧 1784px 사이즈가 됨
+
+  --top-nav-height: 60px; // 상단 네비게이션 높이
+  --top-nav-padding-horizontal: 1.875rem; // 상단 네비게이션 좌우 패딩
+
+  --top-nav-menu-start-padding: 75px; // 상단 네비게이션 메뉴 시작 패딩
+  --top-nav-menu-width: 105px; // 상단 네비게이션 메뉴 넓이
+  --top-nav-menu-active-height: 3px; // 상단 네비게이션 메뉴 활성화 높이
+  --top-nav-menu-active-width: 46px; // 상단 네비게이션 메뉴 활성화 넓이
+  --top-nav-menu-active-border-radius: 1.5px; // 상단 네비게이션 메뉴 활성화 라운드
+
+  --top-nav-menu-empty-width: 40px; // 상단 네비게이션 메뉴 빈 넓이
+
+  --top-nav-menu-avatar-width: 117px; // 상단 네비게이션 메뉴 아바타 넓이
+  --top-nav-menu-avatar-padding-right: 15px; // 상단 네비게이션 메뉴 오른쪽 패딩
+
+  --avatar-width: 85px; // 아바타 넓이
+  --avatar-height: 40px; // 아바타 높이
+  --avatar-border-radius: 300px; // 아바타 라운드
+
+  --home-top-title-height: 104px; // 홈 상단 타이틀 높이
+
+  --modal-min-width: 320px; // 모달 최소 넓이
+
+  --top-area-height: 164px; // 상단 영역 높이 (헤더, 타이틀 영역) << 차후 필터 영역 추가되야함
+  --bottom-fixed-height: 30px; // 하단 빈 고정 영역 높이
+
+  --home-style-select-container-width: 360px; // 홈 스타일 선택 컨테이너 넓이
+  --home-style-select-container-padding-right: 1.875rem; // 홈 스타일 선택 컨테이너 오른쪽 패딩
+}

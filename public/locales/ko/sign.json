@@ -1,0 +1,6 @@
+{
+  "signUp/title": "계정 만들기",
+  "signUp/subTitle": "인증된 이메일 주소로 새로운 계정을 생성합니다.",
+  "signUp/createAccount": "계정 만들기",
+  "resetPassword/resetPassword": "비밀번호 재설정"
+}

@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 0 1.875rem 80px 1.875rem;
+  box-sizing: border-box;
+  .flexWrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(106px, 1fr)); // 104 + border 값 2px
+    gap: 16px;
+    .expandable_row {
+      grid-column: 1 / -1;
+      height: calc(272px - 2rem);
+      background-color: var(--color-white);
+      padding: 1rem;
+      border-radius: 4px;
+      display: none;
+      box-shadow: 0px 4px 4px 0px rgba(241, 240, 247, 0.45);
+    }
+    .expandable_row.show {
+      display: block;
+    }
+    .grid_empty {
+      grid-column: 1 / -1;
+      height: calc(272px - 2rem);
+      padding: 1rem;
+      border-radius: 4px;
+      text-align: center;
+      background: var(--color-white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-black);
+    }
+  }
+}

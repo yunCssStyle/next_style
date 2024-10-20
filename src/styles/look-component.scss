@@ -1,0 +1,53 @@
+// look 공통 컴퍼넌트에서 사용하는 css
+.look_style_wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  // 더보기
+  .more {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 0, 47, 0.48);
+    z-index: var(--more-bg-level);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    p {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--color-white);
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
+  // 시즌 부분
+  .look_season {
+    position: relative;
+    width: 100%;
+    padding: 5% 0 2.5% 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    list-style: none;
+    gap: 2px;
+    li {
+      font-size: 11px;
+      border-radius: 8px;
+      border: 1px solid #e2e2e2;
+      padding: 4px 8px;
+      background-color: #fff;
+    }
+  }
+}

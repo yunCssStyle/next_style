@@ -1,0 +1,25 @@
+{
+  "success": "성공",
+  "success/sendEmail": "입력하신 이메일로 인증코드를 발급 하였습니다.",
+
+  "error": "에러",
+  "error/password": "비밀번호가 일치하지 않습니다.",
+
+  "form/email/requried": "이메일을 입력해주세요.",
+  "form/email/invalid": "이메일 형식이 아닙니다.",
+  "form/email/placeholder": "이메일 주소를 입력하세요.",
+  "form/email/label": "이메일 주소",
+
+  "form/certification/requried": "인증코드를 입력하세요.",
+  "form/certification/invalid": "인증코드 형식이 아닙니다.",
+  "form/certification/placeholder": "인증코드를 입력하세요.",
+  "form/certification/label": "인증 코드 입력",
+  "form/certification/send": "입력완료",
+
+  "form/password/requried": "비밀번호를 입력해주세요.",
+  "form/password/invalid": "비밀번호 형식이 아닙니다.",
+  "form/password/placeholder": "10자 이상의 영문+숫자 조합을 입력하세요.",
+  "form/password/newLabel": "신규 비밀번호",
+  "form/password/reInputPlaceholder": "비밀번호를 다시한번 입력해주세요.",
+  "form/password/reInputLabel": "비밀번호 확인"
+}

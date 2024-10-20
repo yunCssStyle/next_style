@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'AktivGroteskExBasic';
+  src:
+    url('#{$olivela-font-url}AktivGroteskExBasic-Light.woff2') format('woff2'),
+    url('#{$olivela-font-url}AktivGroteskExBasic-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'AktivGroteskExBasic';
+  src:
+    url('#{$olivela-font-url}AktivGroteskExBasic-Regular.woff2') format('woff2'),
+    url('#{$olivela-font-url}AktivGroteskExBasic-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AktivGroteskExBasic';
+  src:
+    url('#{$olivela-font-url}AktivGroteskExBasic-Medium.woff2') format('woff2'),
+    url('#{$olivela-font-url}AktivGroteskExBasic-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,51 @@
+.btnContainer {
+  // min-width: var(--top-nav-menu-width);
+  padding: 0 30px;
+  height: 100%;
+  cursor: pointer;
+  .btnContainerText {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-grow: 0;
+    display: flex;
+    position: relative;
+    .btnContainerTextContainer {
+      position: relative;
+      // span {
+      //   position: absolute;
+      //   right: 0;
+      //   top: var(--badge-small-top);
+      //   min-width: var(--badge-small-width);
+      //   height: var(--badge-small-height);
+      //   background-color: var(--color-point);
+      //   color: var(--color-white);
+      //   font-size: var(--badge-small-text);
+      //   text-align: center;
+      //   border-radius: var(--badge-small-border-radius);
+      // }
+    }
+  }
+  a > ::after {
+    content: '';
+    height: var(--top-nav-menu-active-height);
+    display: block;
+    clear: both;
+    position: absolute;
+    width: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    transition: width 250ms ease-in-out;
+  }
+  :hover::after,
+  &.active > a > ::after {
+    width: var(--top-nav-menu-active-width);
+    background-color: var(--color-point);
+    border-radius: var(--top-nav-menu-active-border-radius);
+    transition: width 250ms ease-in-out;
+  }
+}

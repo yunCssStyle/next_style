@@ -1,0 +1,51 @@
+.fittingContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .fittingWrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    max-width: 198px;
+    .position {
+      width: 100%;
+      padding-top: 216.2629757785467%;
+      position: relative;
+    }
+    .fittingAvatar {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      position: relative;
+    }
+    img {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -1%;
+      bottom: 0;
+      transform: scale(1.1) translate(-0.1%, -0.1%);
+      transform-origin: center center;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .fittingContainer {
+    .fittingWrap {
+      max-width: 206px;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation: fadeIn 1.5s ease-in-out;
+}

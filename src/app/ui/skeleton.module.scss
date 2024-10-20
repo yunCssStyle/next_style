@@ -1,0 +1,203 @@
+@-webkit-keyframes skeleton-loading {
+  0% {
+    background-color: var(--color-skeleton-start);
+  }
+
+  50% {
+    background-color: var(--color-skeleton-middle);
+  }
+
+  100% {
+    background-color: var(--color-skeleton-end);
+  }
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: var(--color-skeleton-start);
+  }
+
+  50% {
+    background-color: var(--color-skeleton-middle);
+  }
+
+  100% {
+    background-color: var(--color-skeleton-end);
+  }
+}
+.skeleton {
+  animation: skeleton-loading 3s linear infinite alternate;
+}
+// 공통으로 쓰일 스켈레톤
+.commonSkeleton {
+  position: relative;
+  overflow: hidden;
+  .skeleton {
+    width: 100%;
+    height: 100%;
+  }
+}
+.lookBookGroupSkeleton {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  border-radius: 0.25rem;
+  background-color: var(--color-white);
+  .imageWrap {
+    width: 141px;
+    height: 100%;
+  }
+  .rightWrap {
+    display: flex;
+    flex: 1;
+    padding: 1rem 0.25rem 1.25rem 1.25rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .icon {
+    padding-right: 0.5rem;
+    width: 24px;
+    height: 24px;
+  }
+  .rows {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    .desc {
+      font-size: 0.625rem;
+      width: 40px;
+      color: var(--color-black);
+    }
+  }
+  .bottoms {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    .cols {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      .type {
+        font-size: 0.625rem;
+        color: var(--color-black);
+      }
+    }
+  }
+  .skeleton {
+    width: 100%;
+    height: 100%;
+  }
+}
+// 상단 프로필 관련 스켈레톤
+.userProfilSkeleton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: var(--top-nav-height);
+  position: relative;
+  .nickName {
+    width: 150px;
+    height: 26px;
+    position: relative;
+    border-radius: var(--avatar-border-radius);
+    overflow: hidden;
+    margin-right: var(--top-nav-menu-avatar-padding-right);
+  }
+  .avatar {
+    width: var(--avatar-width);
+    height: var(--avatar-height);
+    border-radius: var(--avatar-border-radius);
+    position: relative;
+    overflow: hidden;
+    margin-right: calc(117px - var(--avatar-width));
+  }
+}
+.productCardSkeleton {
+  width: 104px;
+  height: 136px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+// 테이블 스켈레톤
+.tableSkeleton {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .tableSkeletonWrap {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    border-radius: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .tableRowCheck {
+      width: 60px;
+      height: 60px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      .skeleton {
+        display: flex;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .tableRowPic {
+      width: 40px;
+      height: 42.5px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      .skeleton {
+        display: flex;
+        width: 40px;
+        height: 42.5px;
+      }
+    }
+    .tableRow {
+      width: 100%;
+      height: 1rem;
+      display: flex;
+      flex: 1;
+      flex-wrap: wrap;
+      border-radius: 10px;
+      overflow: hidden;
+      .skeleton {
+        display: flex;
+        flex: 1;
+      }
+    }
+  }
+}
+// 선택 상품 추천 스타일 스켈레톤
+.productInSkeleton {
+  width: 120px;
+  min-width: 120px;
+  height: 192px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 4px;
+  -webkit-animation: skeleton-gradient 1.8s infinite ease-in-out;
+  animation: skeleton-gradient 1.8s infinite ease-in-out;
+  .skeleton {
+    width: 100%;
+    height: 100%;
+  }
+}
+.inputFieldSkeleton {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  border: 1px solid var(--color-grey);
+}

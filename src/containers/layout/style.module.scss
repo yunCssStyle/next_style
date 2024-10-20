@@ -1,0 +1,96 @@
+.container {
+  caret-color: rgb(55, 53, 47);
+  width: 100%;
+  height: 100%;
+  min-width: var(--w-main-min);
+  max-width: var(--w-main-max);
+  margin: 0 auto;
+  position: relative;
+  min-height: calc(100vh - var(--top-nav-height));
+  --whenContentEditable--WebkitUserModify: read-write-plaintext-only;
+}
+.topNav {
+  background: var(--color-white);
+  max-width: 100vw;
+  z-index: var(--top-nav-level);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: var(--top-nav-height);
+
+  .topNavContainer {
+    width: 100%;
+    min-width: var(--w-main-min);
+    max-width: var(--w-main-wrap-max);
+    margin: 0 auto;
+    opacity: 1;
+    transition: opacity 700ms ease 0s;
+    position: relative;
+    height: var(--top-nav-height);
+    .topNavSpaceContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow: hidden;
+      height: 100%;
+      padding: 0 var(--top-nav-padding-horizontal);
+      background-color: var(--color-white);
+      .topNavLogo {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+      .topNavMenu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: var(--top-nav-height);
+        padding-left: var(--top-nav-menu-start-padding);
+      }
+      .topNavEmpty {
+        // flex-grow: 1;
+        // flex-shrink: 1;
+        // min-width: var(--top-nav-menu-empty-width);
+      }
+    }
+  }
+}
+.topNavUser {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: var(--top-nav-height);
+  .topNavUserAcc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    span {
+      color: var(--color-point);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 180px;
+      display: inline-block;
+      font-weight: 700;
+    }
+    padding-right: var(--top-nav-menu-avatar-padding-right);
+  }
+  .topNavUserAva {
+    width: var(--top-nav-menu-avatar-width);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+.avatarContainer {
+  width: var(--avatar-width);
+  height: var(--avatar-height);
+  border-radius: var(--avatar-border-radius);
+  overflow: hidden;
+  position: relative;
+}
